@@ -9,11 +9,10 @@ public class DbOptions : Dictionary<AppName, DbOption>
     
 }
 
-public record DbOption
+public record DbOption 
 {
     public required string DbConnection { get; init; }
 }
-
 
 public static class DbOptionsExtension
 {
